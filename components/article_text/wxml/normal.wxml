@@ -1,0 +1,30 @@
+ <template name="mode_normal"> 
+    <view class="xx_normal">
+        <!-- 标题 -->
+        <view class="title" >{{article.title}}</view>
+        <!-- 摘要 来源 发布时间 -->
+        <view class="summary">
+            <label hidden="{{article.summary == ''}}">{{article.summary}}</label>
+            <label hidden="{{article.source == ''}}">{{article.source}}</label>
+            <label >{{article.issue_time}}</label>
+            <label >阅读 {{article.click_rate}}</label>
+        </view>
+        <!-- 音频 -->
+        <view class="audio" > 
+            <audio class="" poster="{{article.audio_poster}}" name="{{article.audio_name}}" author="{{article.audio_author}}" src="{{article.audio_src}}" id="myAudio" controls loop></audio>
+        </view> 
+        <!-- 视频 -->
+        <view class="video" > 
+            下方观看视频版，暂停、快进、倒退都没问题（和语音内容相同，选一个就行），继续往下拉还有文字版
+            <video id="myVideo" src="{{article.video_src}}" controls></video>
+        </view> 
+        <!-- 正文 -->
+        <view class="content" style="font-size:{{fontSize}}px; width:{{article.content_width-60}}rpx;">
+                <rich-text nodes="{{article.content}}" /> 
+        </view>
+
+        <!-- <view class="font_size" catchtap="fontSizeSwitch" >
+            <label >字体</label>
+        </view>  -->
+    </view> 
+ </template> 

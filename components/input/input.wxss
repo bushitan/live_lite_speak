@@ -1,0 +1,103 @@
+.check{
+    flex: 0 0 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10pt;
+    color: #1AAD19;
+}
+
+.check_input {
+    /* width: 100%; */
+    flex: 1 0 0 ;
+    font-size:10pt ;
+    display:flex;
+    align-items:center;
+    height: auto !important;
+}
+
+
+
+.xx_input {
+  background-color: #FFFFFF;
+  font-size: 10pt;
+  padding: 0 15px;
+}
+.xx_input__placeholder{
+
+  font-size: 10pt;
+  line-height: 10pt;
+}
+
+.xx_input__title {
+  margin-top: .77em;
+  margin-bottom: .3em;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #999999;
+  font-size: 14px;
+}
+.xx_input__node {
+  padding: 0;
+  display: flex;
+}
+.xx_input__name {
+    width:75px;
+    font-size:10pt;
+    margin:10pt 5px 10pt 0;
+    display:flex;
+    align-items:center;
+}
+.xx_input__line {
+    width: 100%;
+    font-size:10pt ;
+    display:flex;
+    align-items:center;
+    height: auto !important;
+}
+.xx_input__area {
+  width: 100%;
+margin:10pt  0;
+}
+.xx_input__node textarea{
+    
+  /* display: block; */
+  width: 100%;
+  height: 120px;
+}
+
+.xx_input__node input{
+    
+  /* display: block; */
+  width: 100%;
+}
+
+
+
+
+
+.xx_text__right{
+    text-align: right;
+}
+
+
+.xx_menu__node_access {
+  position: relative;
+}
+.xx_menu__node_access:after {
+  content: " ";
+  display: inline-block;
+  height: 6px;
+  width: 6px;
+  border-width: 1px 1px 0 0;
+  border-color: #C8C8CD;
+  border-style: solid;
+  -webkit-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+          transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+  position: relative;
+  top: -2px;
+  position: absolute;
+  top: 50%;
+  margin-top: -2px;
+  right: 2px;
+}

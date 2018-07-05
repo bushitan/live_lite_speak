@@ -1,0 +1,16 @@
+
+.swiper{
+    /* padding: 0 15px 0; */
+    height: 128px;
+}
+.swiper-item{
+    /* border-radius: 5px; */
+    height: 128px;
+
+}
+.image{
+    /* border-radius: 5px; */
+    width: 100%;
+    /* height: 100%; */
+    height: 128px;
+}

@@ -1,0 +1,10 @@
+ <view class='menu' >
+    <block wx:for="{{list}}" wx:key="index">
+        <navigator url='{{item.url}}' class='node'>
+            <view class='{{item.style}} icon'>
+                <image src='{{item.icon}}' class='icon_image '></image>
+            </view>
+            <view class='des'>{{item.des}}</view>
+        </navigator>
+    </block>
+ </view>

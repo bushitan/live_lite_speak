@@ -1,0 +1,40 @@
+
+<view class='cover'>
+    <block wx:for="{{list}}" wx:key="item">
+       <view target="miniProgram" open-type="navigate" app-id="wx51930c31391cc5cc" path="" extra-data="" version="release"
+       class='node'> 
+            <!-- <image class='image' src='{{item.cover}}' mode='widthFit'></image>
+            <view class='title'>{{item.title}}</view>
+            <view class='time'>{{item.issue_time}}</view> -->
+            <view class='title'>qwewr32r32rqwewr32r32rqwr32rqwewr32r32rqwewr32r32rqwewr32r32rqwewr32r32r</view>
+            <view class='pk'>
+                <view class='student'>
+                    <view class='node_title'>学生</view>
+                    <view class='voice'>
+                        <image class='pk_image' src='../../images/my_select.png'></image>
+                        <image class='pk_image' src='../../images/my_select.png'></image>
+                        <image class='pk_image' src='../../images/my_select.png'></image>
+                        <image class='pk_image' src='../../images/my_select.png'></image>
+                        <image class='pk_image' src='../../images/my_select.png'></image>
+                        <image class='pk_image' src='../../images/my_select.png'></image>
+                    </view>
+                </view>
+                <view class='line'></view>
+                <view class='test' > 
+                    <view class='node_title'>体验</view>
+                    <view class='voice'>
+                    
+                        <image class='pk_image' src='../../images/my_select.png'></image>
+                        <image class='pk_image' src='../../images/my_select.png'></image>
+                        <image class='pk_image' src='../../images/my_select.png'></image>
+                        <image class='pk_image' src='../../images/my_select.png'></image>
+                        <image class='pk_image' src='../../images/my_select.png'></image>
+                        <image class='pk_image' src='../../images/my_select.png'></image>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <!-- <view class='line__gray'></view> -->
+        <view style='height:10px'></view>
+    </block>
+</view>

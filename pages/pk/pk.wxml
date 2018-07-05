@@ -1,0 +1,10 @@
+
+<view class='banner page__bg_white'>
+    <view class='line'></view>
+    <label>拼读比赛</label>
+</view>
+    <!-- list="{{articleList}}" -->
+<xx-cover
+>
+</xx-cover>
+<xx-loading more="{{false}}"></xx-loading>

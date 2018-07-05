@@ -1,0 +1,34 @@
+.menu{
+    display: flex;
+    flex-wrap:wrap;
+}
+.node{
+    display: flex;
+    justify-content: space-between;
+    flex-direction:column;
+    align-items: center;
+    width: 25%;
+    margin-bottom:10px; 
+}
+.green{
+    background-color: #52b155;
+}
+.yellow{background-color: #fed000}
+.orange{background-color: #ff8c35}
+.blue{background-color: #0284ff}
+
+.icon{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon_image{
+    width: 20px;
+    height: 20px;
+}
+.des{
+    font-size: 9pt;
+}

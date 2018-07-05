@@ -1,0 +1,25 @@
+/**app.wxss**/
+
+page{
+     /* background-color: #f7f7f7;  */
+     /* background-color: #eeeeee;  */
+     /* background-color: #f9f9f9; */
+     /* background-color: #ebebeb; */
+     background-color: #f3f2f7;
+     
+    font-size: 16px;
+    font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif,Microsoft YaHei;
+    font-family : "Microsoft YaHei";
+}
+
+.page__bg_white{
+    background-color: #fff;
+}
+.page__bg_zfbblue{
+    background-color: #1c82d4;
+}
+
+.line__gray{
+    content: "";
+    border-bottom: 1rpx #f0f0f0 solid;
+}

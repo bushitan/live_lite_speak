@@ -1,0 +1,73 @@
+
+<!-- <view wx:if="{{mode == MODE_NORMAL}}">
+    <import src="wxml/normal.wxml"/>
+    <template is="mode_normal" data="{{article: content }}" />  
+</view>
+
+<view wx:if="{{mode == MODE_TEXT}}">
+    <import src="wxml/text.wxml"/>
+    <template is="mode_text" data="{{article: content }}" />  
+</view>
+
+
+<view wx:if="{{mode == MODE_VIDEO}}">
+    <import src="wxml/video.wxml"/>
+    <template is="mode_video" data="{{article: content }}" />  
+</view>
+
+<view wx:if="{{mode == MODE_AUDIO}}">
+    <import src="wxml/audio.wxml"/>
+    <template is="mode_audio" data="{{article: content }}" />  
+</view> -->
+
+<view wx:if="{{mode == MODE_NORMAL}}">
+    <view class="xx_input__node ">
+        <view >
+                <view class="xx_input__name ">{{name}}</view>
+        </view>
+        <view class='xx_input__line'>
+            <input class="" placeholder="{{placeholder}}" bindinput="input" value='{{value}}' />
+        </view>
+        <view class=" xx_menu__node_access xx_text__right"></view>
+    </view>
+</view>
+
+<view wx:if="{{mode == MODE_CHECK}}">
+    <view class="xx_input__node ">
+        <view >
+                <view class="xx_input__name ">{{name}}</view>
+        </view>
+        <view class='check_input'>
+            <input class="" placeholder="{{placeholder}}" bindinput="input" value='{{value}}' />
+        </view>
+        <view class='check' catchtap='check'>获取验证码</view>
+        <view class=" xx_menu__node_access xx_text__right"></view>
+    </view>
+</view>
+
+<view wx:if="{{mode == MODE_TEXTAREA}}">
+    <view class="xx_input__node ">
+        <view >
+                <view class="xx_input__name ">{{name}}</view>
+        </view>
+        <view class='xx_input__area'> 
+            <textarea class="" placeholder="{{placeholder}}"   placeholder-class="xx_input__placeholder"  
+            value="{{value}}"  bindinput="input" />
+        </view> 
+    </view>
+</view>
+
+<view wx:if="{{mode == MODE_SELECT}}">
+    <picker bindchange="change" value="{{index}}" range="{{array}}">
+    <view class="xx_input__node ">
+        <view >
+                <view class="xx_input__name ">{{name}}</view>
+        </view>
+        
+            <view class='xx_input__line'>                
+                <input class="" disabled='true' placeholder="{{placeholder}}" bindinput="input" value='{{array[index]}}' />
+            </view>
+            <view class=" xx_menu__node_access xx_text__right"></view>
+    </view>
+    </picker>
+</view>

@@ -1,0 +1,37 @@
+ <template name="mode_video"> 
+<view>
+    <view class='xx_video'>
+        <video class='xx_video' src='{{article.video_src}}'></video>
+    </view>
+  <view class="xx_p_all15" style="font-size:{{fontSize}}px; width:{{article.content_width-60}}rpx;">
+    
+    <view class="title" >{{article.title}}</view>
+    <!-- 摘要 来源 发布时间 -->
+    <view class="summary">
+        <label hidden="{{article.summary == ''}}">{{article.summary}}</label>
+        <label hidden="{{article.source == ''}}">{{article.source}}</label>
+        <label >{{article.issue_time}}</label>
+        <label >阅读 {{article.click_rate}}</label>
+    </view>
+    <view class="content" style="font-size:{{fontSize}}px; width:{{article.content_width-60}}rpx;">
+      <rich-text  nodes="{{article.content}}" /> 
+    </view>
+  </view>
+
+    <!-- <view class='xx_p_all15'>
+        <view class='title'>松香高科技论坛</view>
+        <view class='summary xx_m_t15'>何博士，男，1964年9月10日生于浙江省杭州市，祖籍浙江省嵊州市（原嵊县）谷来镇， 苏美集团主要创始人，现担任松香协会中国理事会主席兼全球董事会成员、华谊兄弟董事、生命科学突破奖基金会董事。</view>
+
+        <view class='xx_article__title_border'>嘉宾及主持人</view>
+        <text class='xx_article__content'>何博士
+        苏美集团 创始人兼执行主席
+
+        穆瑞蓝（采访人）
+        时代公司，《财富杂志总裁，首席内容官
+
+        人愿意付钱 高端内容支付模式在中国非常流行意付钱 高端内容支付模式在中国非常流行意付钱 高端内容支付模式在中国非常流行意付钱 高端内容支付模式在中国非
+        常流行意付钱 高端内容支付模式在中国非常流行意付钱 高端内容支付模式在中国非常流行
+        </text>
+    </view> -->
+</view>
+ </template> 

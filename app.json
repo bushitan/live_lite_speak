@@ -1,0 +1,36 @@
+{
+    "pages":[
+        "pages/pk/pk",
+        "pages/more/more",
+        "pages/index/index",
+        "pages/speak/speak",
+        "pages/logs/logs"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#1c82d4",
+        "backgroundTextStyle": "light",
+        "navigationBarTitleText": "畅畅课堂",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh": false
+    },
+    "tabBar": {
+        "backgroundColor": "#fcfcfc",
+        "color": "#b3b3b3",
+        "selectedColor": "#212121",
+        "borderStyle": "white",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "课程",
+                "iconPath": "images/info_unselect.png",
+                "selectedIconPath": "images/info_select.png"
+            },
+            {
+                "pagePath": "pages/pk/pk",
+                "text": "作业",
+                "iconPath": "images/match_unselect1.png",
+                "selectedIconPath": "images/match_select1.png"
+            }
+        ]
+    }
+}

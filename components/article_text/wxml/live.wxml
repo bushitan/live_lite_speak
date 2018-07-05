@@ -1,0 +1,20 @@
+  <template name="mode_live"> 
+    <view class='xx_live '>
+      <view class='header'>
+        <image src='{{article.cover_url}}'  mode='widthFix'></image>
+        <view class='title'>{{article.title}}</view>
+        <view class='time'>
+            <label> {{article.description}} </label> 
+        </view>
+        <!-- <view class='btn'>
+            <button catchtap='toLive' type='primary' wx:if="{{isMember}}">进入房间</button>
+            <button catchtap='prepare' type='primary' wx:else>成为会员</button>
+        </view> -->
+      </view>
+      <view style='height:10px;'></view>
+      <view class='content'>
+          <image src='{{article.content_url}}' mode='widthFix'></image>
+      </view>
+    </view>
+    
+ </template>  

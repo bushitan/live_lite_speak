@@ -1,0 +1,21 @@
+<!--components/xx_cover_news/xx_cover_news.wxml-->
+ 
+
+<view class='cover'>
+    <block wx:for="{{list}}" wx:key="item">
+        <navigator url='/pages/roster_info/roster_info?roster_id={{item.roster_id}}' class='node'> 
+            <image class='right' src='{{item.user_logo}}' mode='aspectFit'></image>
+            <view class='left'>
+                <view class='title'>{{item.user_name}}</view>
+                <!-- <view style='height:4px'></view> -->
+                <view class='time'>{{item.company_name}}</view>
+                <view style='height:4px'></view>
+                <view class='des' wx:if="{{item.sell != ''}}">供应：{{item.sell}}</view>
+                <!-- <view style='height:4px'></view> -->
+                <view class='des' wx:if="{{item.buy != ''}}">求购：{{item.buy}}</view>
+            </view>
+        </navigator>
+        <view style='height:15px'></view>
+        <!-- <view class='line__gray'></view> -->
+    </block>
+</view>
