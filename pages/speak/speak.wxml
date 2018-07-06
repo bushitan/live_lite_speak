@@ -3,8 +3,35 @@
     <view class='line'></view>
     <label>活动</label>
 </view>
-    <!-- list="{{articleList}}" -->
-<xx-cover
->
-</xx-cover>
-<xx-loading more="{{false}}"></xx-loading>
+<view class='node'>
+    <view class='content'>
+        <xx-blackboard title="{{speak.title}}" content="{{speak.board}}"></xx-blackboard>
+        
+        <view class='pk'>
+            <xx-voice 
+                title="学员"
+                list="{{speak.student_list}}"
+                select="{{selectID}}" 
+                catch:click="playVoice"
+            ></xx-voice>
+            <!-- <view class='rule'></view> -->
+            <xx-voice 
+                title="游客"
+                list="{{speak.visitor_list}}" 
+                select="{{selectID}}" 
+                catch:click="playVoice"
+                direction="row-reverse"
+            ></xx-voice>
+        </view>
+    </view>
+    <view style='height:50px'></view>
+</view>
+
+  <view class='menu'>
+        <view class='btn'>上传</view>
+        <view class='btn'>
+            <label wx:if="{{true}}">录音</label>
+            <label wx:else>停止</label>
+        </view>
+        <view class='btn'>试听</view>
+    </view>

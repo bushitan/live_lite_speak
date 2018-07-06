@@ -2,6 +2,8 @@
     "usingComponents": {
         "xx-menu": "../../components/menu/menu",
         "xx-loading": "../../components/loading/loading",
+        "xx-voice": "../../components/voice/voice",
+        "xx-blackboard": "../../components/blackboard/blackboard",
         "xx-cover": "../../components/cover_pk/cover_pk"
     }
 }

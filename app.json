@@ -1,9 +1,10 @@
 {
     "pages":[
-        "pages/pk/pk",
-        "pages/more/more",
         "pages/index/index",
+        "pages/pk/pk",
         "pages/speak/speak",
+        "pages/more/more",
+        "pages/my/my",
         "pages/logs/logs"
     ],
     "window": {
@@ -30,6 +31,12 @@
                 "text": "作业",
                 "iconPath": "images/match_unselect1.png",
                 "selectedIconPath": "images/match_select1.png"
+            },
+            {
+                "pagePath": "pages/my/my",
+                "text": "报名",
+                "iconPath": "images/my_unselect.png",
+                "selectedIconPath": "images/my_select.png"
             }
         ]
     }

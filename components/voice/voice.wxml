@@ -1,0 +1,14 @@
+<view class='student'>
+    <view class='node_title'>{{title}}</view>
+    <view style='height:10px;'></view>
+    <view class='voice' style='flex-direction:{{direction}}'>
+        <block wx:for="{{list}}">
+            <image             
+                class='pk_image {{select==item.id?"bg_select":""}}' 
+                src='{{item.logo}}'
+                catchtap="click" 
+                data-index="{{index}}"
+            ></image>
+        </block>       
+    </view>
+</view>

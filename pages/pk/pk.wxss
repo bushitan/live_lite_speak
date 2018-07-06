@@ -16,3 +16,28 @@
     margin-right:5px;
     /* border-left: 2px solid #1c82d4; */
 }
+
+.node{    padding: 15px;}
+.content{
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+}
+.pk{
+    display: flex;
+    justify-content: space-between;
+}
+.pk xx-voice {
+    flex:1;
+}
+.rule{
+    
+    border-left: 1rpx #888 solid;
+    border-right: 1rpx #888 solid;
+}
+.join{
+    text-align: center;
+    padding: 10px 0;
+    color: green;
+    font-size: 11pt;
+}

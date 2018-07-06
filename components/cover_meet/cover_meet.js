@@ -9,9 +9,9 @@ Component({
           value: [
               { title: "我是一个很", issue_time: "sf1321", cover_url:"../../images/member_super_vip_icon.png",},
               { title: "我是一个很", issue_time: "sf1321", cover_url:"../../images/member_super_vip_icon.png",},
-              { title: "我是一个很", issue_time: "sf1321", cover_url: "../../images/member_super_vip_icon.png", },
-              { title: "我是一个很", issue_time: "sf1321", cover_url: "../../images/member_super_vip_icon.png", },
-              { title: "我是一个很", issue_time: "sf1321", cover_url: "../../images/member_super_vip_icon.png", },
+            //   { title: "我是一个很", issue_time: "sf1321", cover_url: "../../images/member_super_vip_icon.png", },
+            //   { title: "我是一个很", issue_time: "sf1321", cover_url: "../../images/member_super_vip_icon.png", },
+            //   { title: "我是一个很", issue_time: "sf1321", cover_url: "../../images/member_super_vip_icon.png", },
           ],
           //   observer: '_changeLevel',
       },

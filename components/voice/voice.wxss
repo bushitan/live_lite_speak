@@ -1,0 +1,33 @@
+
+.pk{
+    display: flex;
+    justify-content: space-around;
+}
+.pk_image{
+    width: 32px;
+    height: 32px;
+}
+.student , .test{
+    flex: 1;
+    padding: 5px
+}
+.node_title{
+    font-size: 11pt;
+    text-align: center;
+}
+.voice{
+     display: flex;
+    /* justify-content: space-around;  */
+    flex-wrap: wrap;
+    background-color: #eee;
+    border-radius: 5px;
+}
+.line{
+    
+    border-left: 1rpx #888 solid;
+    border-right: 1rpx #888 solid;
+}
+
+.bg_select{
+    background-color: green;    
+}

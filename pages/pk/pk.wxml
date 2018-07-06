@@ -3,8 +3,30 @@
     <view class='line'></view>
     <label>拼读比赛</label>
 </view>
-    <!-- list="{{articleList}}" -->
-<xx-cover
->
-</xx-cover>
+
+<block wx:for="{{pkList}}">
+    <view class='node'>
+        <view class='content'>
+            <xx-blackboard title="{{item.title}}" content="{{item.board}}"></xx-blackboard>
+            <view class='pk'>
+                <xx-voice 
+                    title="学员"
+                    list="{{item.student_list}}"
+                    select="{{selectID}}" 
+                    catch:click="playVoice"
+                ></xx-voice>
+                <!-- <view class='rule'></view> -->
+                <xx-voice 
+                    title="试听"
+                    list="{{item.visitor_list}}" 
+                    select="{{selectID}}" 
+                    direction="row-reverse"
+                    catch:click="playVoice"
+                ></xx-voice>
+            </view>
+            <navigator url="/pages/speak/speak" class='join' catchtap='join'>我也参加</navigator>
+        </view>
+    </view>
+</block>
+
 <xx-loading more="{{false}}"></xx-loading>

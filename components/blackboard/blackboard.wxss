@@ -1,0 +1,21 @@
+
+.title{
+    font-size: 11pt;
+    font-weight: bolder;
+}
+.board{
+    min-height: 100px; 
+    padding:10px 15px; 
+    font-size: 10pt; 
+    word-wrap:break-word;
+    color: #fff;
+    border-radius: 8px;
+}
+.sample{
+    text-align: center;
+    font-size: 9pt;
+}
+.sample image{
+    width: 32px;
+    height: 32px;
+}

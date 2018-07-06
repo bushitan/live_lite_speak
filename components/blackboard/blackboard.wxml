@@ -1,0 +1,11 @@
+<view class='title'>{{title}}</view>
+<view style='height:10px'></view>
+<view class='board' style='background-color:{{color}}'>{{content}}</view>
+<view style='height:10px'></view>
+<view class='sample'>
+    <view>老师示范</view>
+    <view style='height:5px'></view>
+    <image src='../../images/phone.png'></image>
+<!-- <button size='mini'>老师示范</button> -->
+</view>
+<view style='height:10px'></view>
