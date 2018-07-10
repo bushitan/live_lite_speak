@@ -1,6 +1,7 @@
 {
     "pages":[
         "pages/index/index",
+        "pages/article/article",
         "pages/pk/pk",
         "pages/speak/speak",
         "pages/more/more",
@@ -15,7 +16,7 @@
         "enablePullDownRefresh": false
     },
     "tabBar": {
-        "backgroundColor": "#fcfcfc",
+        "backgroundColor": "#fff",
         "color": "#b3b3b3",
         "selectedColor": "#212121",
         "borderStyle": "white",

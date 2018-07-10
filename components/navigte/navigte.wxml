@@ -1,0 +1,11 @@
+
+<view catchtap="click" class="xx_node " hover-class="xx_active" >
+    <slot name="icon"  ></slot>
+    <view class="title">
+        <slot name="left"></slot>
+    </view>
+    <view class="content">
+        <slot name="right"></slot>
+    </view> 
+     <view class="arrow" hidden='{{isarrow == "false"}}'></view> 
+</view>

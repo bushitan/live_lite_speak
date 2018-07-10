@@ -1,0 +1,4 @@
+<view class='banner page__bg_white'>
+     <view class='line'></view>
+    <label>{{name}}</label> 
+</view>

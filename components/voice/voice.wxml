@@ -8,6 +8,7 @@
                 src='{{item.logo}}'
                 catchtap="click" 
                 data-index="{{index}}"
+                data-url="{{item.url}}"
             ></image>
         </block>       
     </view>

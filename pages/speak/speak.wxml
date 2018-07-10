@@ -27,11 +27,15 @@
     <view style='height:50px'></view>
 </view>
 
-  <view class='menu'>
+<xx-record></xx-record>
+
+  <!-- <view class='menu'>
         <view class='btn'>上传</view>
         <view class='btn'>
             <label wx:if="{{true}}">录音</label>
             <label wx:else>停止</label>
         </view>
         <view class='btn'>试听</view>
-    </view>
+    </view> -->
+
+    

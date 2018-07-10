@@ -1,7 +1,9 @@
 {
     "usingComponents": {
         "xx-menu": "../../components/menu/menu",
+        "xx-swiper": "../../components/swiper/swiper",
+        "xx-tab": "../../components/tab/tab",
         "xx-loading": "../../components/loading/loading",
-        "xx-cover": "../../components/cover_meet/cover_meet"
+        "xx-cover": "../../components/cover_index/cover_index"
     }
 }

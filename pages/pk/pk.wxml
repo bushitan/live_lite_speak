@@ -24,6 +24,8 @@
                     catch:click="playVoice"
                 ></xx-voice>
             </view>
+            <view style='height:15px;'></view>
+            <view class='line__gray'></view>
             <navigator url="/pages/speak/speak" class='join' catchtap='join'>我也参加</navigator>
         </view>
     </view>

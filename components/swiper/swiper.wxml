@@ -7,9 +7,11 @@
     circular="true"	  class="swiper">
         <block wx:for="{{list}}" wx:key="index">
             <swiper-item class="swiper-item">
+                <navigator url='/pages/article/article?article_id={{item.article_id}}'  >
                 <image  class='image'
                  src="{{item.url}}"   
-                catchtap="click" data-index="{{index}}"/>
+                 data-index="{{index}}"/>
+                </navigator>
             </swiper-item>
         </block> 
     </swiper>

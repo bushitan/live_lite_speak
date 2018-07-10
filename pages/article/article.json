@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+        "article-video": "../../components/article_video/article_video"
+    }
+}

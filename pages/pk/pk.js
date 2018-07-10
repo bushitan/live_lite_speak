@@ -15,7 +15,7 @@ Page({
                     {
                         id: "1",
                         logo: "../../images/my_select.png",
-                        url: "../../images/voice.mp3",
+                        url: 'http://img.12xiong.top/help_click.mp3',
                     },
                 ],
                 visitor_list: [

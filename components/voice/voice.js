@@ -1,4 +1,7 @@
 // components/xx_cover_news/xx_cover_news.js
+
+
+            const innerAudioContext = wx.createInnerAudioContext()
 Component({
     /**
      * 组件的属性列表
@@ -44,10 +47,29 @@ Component({
      */
     methods: {
         click(e) {
-            console.log(e.currentTarget.dataset.index)
+            // http://img.12xiong.top/help_click.mp3
             var index = e.currentTarget.dataset.index
             var url = this.data.list[index].url
             var id = this.data.list[index].id
+            
+
+            if( this.data.select == id){
+                console.log(111)
+                innerAudioContext.stop()
+            }
+
+            innerAudioContext.src = url
+            
+            innerAudioContext.onPlay(() => {
+                console.log('开始播放')
+            })
+            innerAudioContext.onError((res) => {
+                console.log(res.errMsg)
+                console.log(res.errCode)
+            })
+            innerAudioContext.play()
+
+            console.log(e.currentTarget.dataset.index)
             this.triggerEvent('click', id);
         },
     }

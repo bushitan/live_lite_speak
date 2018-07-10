@@ -1,8 +1,21 @@
 
 <view class='banner page__bg_white'>
-    <view class='line'></view>
-    <label>试听</label>
+    <!-- <view class='line'></view>
+    <label>试听</label> -->
+    <xx-tab
+        mode="scroll"    
+        colorunselect="#888" 
+        colorselect="#1c82d4"  
+        bind:click="clickTag"
+    >
+    </xx-tab>
 </view>
+
+
+<view style='height: 55px'> </view>
+<xx-swiper
+></xx-swiper>
+
     <!-- list="{{articleList}}" -->
 <xx-cover
 >
