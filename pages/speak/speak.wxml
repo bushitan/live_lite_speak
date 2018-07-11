@@ -1,11 +1,15 @@
 
 <view class='banner page__bg_white'>
     <view class='line'></view>
-    <label>活动</label>
+    <label>{{speak.theme.title}}</label>
 </view>
 <view class='node'>
     <view class='content'>
-        <xx-blackboard title="{{speak.title}}" content="{{speak.board}}"></xx-blackboard>
+        <xx-blackboard 
+            title="" 
+            content="{{speak.theme.content}}"
+            url="{{speak.theme.voice_url}}"
+        ></xx-blackboard>
         
         <view class='pk'>
             <xx-voice 
@@ -24,10 +28,27 @@
             ></xx-voice>
         </view>
     </view>
-    <view style='height:50px'></view>
+    <view style='height:81px'></view>
 </view>
 
-<xx-record></xx-record>
+
+<view  class='footer' wx:if="{{!isLogin}}">
+    上传作业，请先按钮，获取头像    
+    <button size='mini'  type='primary' 
+    open-type='getUserInfo' bindgetuserinfo="getUserInfo">获取头像</button>
+</view>
+
+<block wx:else>
+    <view wx:if="{{isComplete}}">
+        <xx-record 
+            catch:getTempFile="getRecordFile"
+        ></xx-record> 
+    </view>
+    <view wx:else class='footer'>
+        您已提交作业，如要重新提交，请点击删除 
+        <button size='mini' catchtap='delete' >删除</button>
+    </view> 
+</block>
 
   <!-- <view class='menu'>
         <view class='btn'>上传</view>

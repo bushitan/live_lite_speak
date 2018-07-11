@@ -14,34 +14,35 @@ Page({
             student_list: [
                 {
                     id: "1",
-                    logo: "../../images/my_select.png",
+                    logo: "../../images/logo.jpg",
                     url: "../../images/voice.mp3",
                 },
                 {
-                    id: "1",
-                    logo: "../../images/my_select.png",
+                    id: "11",
+                    logo: "../../images/logo.jpg",
                     url: "../../images/voice.mp3",
                 },
                 {
-                    id: "1",
-                    logo: "../../images/my_select.png",
+                    id: "111",
+                    logo: "../../images/logo.jpg",
                     url: "../../images/voice.mp3",
                 },
                 {
-                    id: "1",
-                    logo: "../../images/my_select.png",
+                    id: "1111",
+                    logo: "../../images/logo.jpg",
                     url: "../../images/voice.mp3",
                 },
                 {
-                    id: "1",
-                    logo: "../../images/my_select.png",
+                    id: "114",
+                    logo: "../../images/logo.jpg",
                     url: "../../images/voice.mp3",
                 },
                 {
-                    id: "1",
-                    logo: "../../images/my_select.png",
+                    id: "12",
+                    logo: "../../images/logo.jpg",
                     url: "../../images/voice.mp3",
                 },
+              
             ],
             visitor_list: [
                 {
@@ -49,32 +50,27 @@ Page({
                     logo: "../../images/my_select.png",
                     url: "../../images/voice.mp3",
                 },
-                {
-                    id: "2",
-                    logo: "../../images/my_select.png",
-                    url: "../../images/voice.mp3",
-                },
-                {
-                    id: "2",
-                    logo: "../../images/my_select.png",
-                    url: "../../images/voice.mp3",
-                },
-                {
-                    id: "2",
-                    logo: "../../images/my_select.png",
-                    url: "../../images/voice.mp3",
-                },
-                {
-                    id: "2",
-                    logo: "../../images/my_select.png",
-                    url: "../../images/voice.mp3",
-                },
+            
             ],
         },
-
+        
+        isLogin:false,
+        isComplete: true,
         selectID: null,
     },
-
+    getUserInfo(res){
+        var userInfo = res.detail.userInfo
+        var speak = GP.data.speak
+        speak.visitor_list[0].logo = userInfo.avatarUrl
+        GP.setData({
+            logo: userInfo.avatarUrl,
+            name: userInfo.nickName,
+            speak: speak,
+            isLogin:true,//登陆成功
+        })
+        //本地存储
+        wx.setStorageSync(API.KEY_USER, userInfo)
+    },
     //选择试听
     playVoice(e) {
         console.log(e)
@@ -83,24 +79,32 @@ Page({
         })
     },
 
-
+    //获取录音文件
+    getRecordFile(e){
+        console.log(e)
+    },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
         GP = this
-        // GP.onInit()
+        if (wx.getStorageSync(API.KEY_USER) != "")
+            GP.setData({ isLogin:true})
+        GP.onInit(options.theme_id)
     },
 
-    onInit() {
+    onInit(theme_id) {
 
         API.Request({
-            url: "https://xcx.308308.com/huaxun_2/api/article/get_list/meet/?tag_id=&start_index=0&end_index=10&app_id=wx51930c31391cc5cc",
+            url: API.SPEAK_GET_THEME,
+            data:{
+                theme_id: theme_id
+            },
             success: function (res) {
                 console.log(res.data)
                 GP.setData({
-                    articleList: [res.data.article_list[0]]
+                    speak: res.data.theme_dict
                 })
                 // GP.getCategoryList(1)
             },

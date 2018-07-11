@@ -1,13 +1,25 @@
 
+ <view class="xx_menu ">
+    <view  url="" class="xx_menu__node page__bg_zfbblue ">
+        <view class="xx_menu__node_logo" >
+            <button open-type='getUserInfo' class='login_btn' bindgetuserinfo="getUserInfo">
+                <image class='login_img' src="../../images/click_login.png" wx:if="{{user==''}}"></image>
+                <image class='login_img' src="{{user.avatarUrl}}" wx:else></image>
+            </button>
+        </view>
+    </view>
+</view>
+
+
 <xx-banner name="课堂位置"></xx-banner>
-<map  latitude="26.5589" longitude="106.70393" markers='{{markers}}' scale="18" ></map>
+<map latitude="{{mapDict.latitude}}" longitude="{{mapDict.longitude}}"markers='{{markers}}' scale="18" ></map>
 
 <view class='input'>
     <xx-navigte   catchclick="clickAddress">
         <view slot="left" >云景路8号</view> 
         <view slot="right">导航</view>
     </xx-navigte>
-    <view class='xx_line__gray '></view> 
+    <view class='line__gray'></view>
     <xx-navigte   catchclick="clickPhone" >
         <view slot="left" >15211786648</view> 
         <view slot="right">拨号</view>
@@ -18,53 +30,12 @@
 <view style='height:15px;'></view>
 <xx-banner name="报名"></xx-banner>
 <view class='input'>
-    <xx-input name="姓名"></xx-input>
-    <xx-input name="电话"></xx-input>
+    <xx-input name="姓名" catch:input="inputName"></xx-input>
+    <view class='line__gray'></view>
+    <xx-input name="电话" catch:input="inputPhone"></xx-input>
 </view>
 <view style='height:15px;'></view>
 <view class='btn'>
-    <button type='primary'>试听课报名</button>
+    <button type='primary' catchtap='audition'>试听课报名</button>
 </view>
 <view style='height:30px;'></view>
-<!-- 
-
-<form bindsubmit="formSubmit" bindreset="formReset">
- <view>选择类别:</view>
-  <view class="section section_gap">
-    <radio-group name="radio-group">
-      <label><radio value="radio1"/>爱情</label>
-      <label><radio value="radio2"/>事业</label>
-      <label><radio value="radio3"/>友情</label>
-      <label><radio value="radio4"/>责任</label>
-      <label><radio value="radio5"/>前途</label>
-    </radio-group>
-  </view>
- 
- <text class="txt">我的姓名：</text>
-  <view class="section">
-    <input name="input" />
-  </view>
- 
-  <text>我的头衔：</text>
-  <view class="section">
-    <input name="input"/>
-  </view>
- 
-<text class="txt">介绍一下我自己：</text> 
-<view class="section1">
-  <textarea placeholder="" focus="{{focus}}" />
-</view>
- 
- 
- 
-  <text class="txt">需要支付：</text>
-  <view class="section" type="number">
-    <input name="input" placeholder="0.01" />
-  </view>
- 
- 
- 
-  <view class="btn-area">
-    <button formType="submit" style="background:#ff9900">提交</button>
-  </view>
-</form> -->

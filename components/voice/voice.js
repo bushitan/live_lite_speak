@@ -1,7 +1,7 @@
 // components/xx_cover_news/xx_cover_news.js
 
 
-            const innerAudioContext = wx.createInnerAudioContext()
+const innerAudioContext = wx.createInnerAudioContext()
 Component({
     /**
      * 组件的属性列表
@@ -49,7 +49,7 @@ Component({
         click(e) {
             // http://img.12xiong.top/help_click.mp3
             var index = e.currentTarget.dataset.index
-            var url = this.data.list[index].url
+            var url = this.data.list[index].voice_url
             var id = this.data.list[index].id
             
 

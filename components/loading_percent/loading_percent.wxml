@@ -1,0 +1,31 @@
+
+<view class="progressbar">
+  <view class="left-container">
+    <view class="left-circle" style='transform: {{left_circle_transform}}; transition: {{left_circle_transition}}'></view>
+  </view>
+  <view class="right-container">
+    <view class="right-circle" style='transform: {{right_circle_transform}}; transition: {{right_circle_transition}}'></view>
+  </view>
+</view>
+<!-- 
+<view class='bg'>
+    <view class='circle '>
+        <view class='circle sub' catchtap='clickToPageBank'>
+            <view class='node' hover-class="click">
+            上传
+            </view>           
+        </view>
+
+        <view class='circle center' catchtap='clickSetLevel'>
+                <view class='node level_color_1'  hover-class="click" wx:if="{{currentLevel == STRANGER}}">陌</view>
+                <view class='node level_color_2'  hover-class="click" wx:elif="{{currentLevel == UNSURE}}">巩</view>
+                <view class='node level_color_3'  hover-class="click" wx:else>牢</view>
+        </view>
+
+        <view class='circle sub' catchtap='clickToPageMy' > 
+            <view class='node' hover-class="click">
+                试听
+            </view>    
+        </view>
+    </view>
+</view> -->

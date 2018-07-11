@@ -12,9 +12,9 @@
 </view>
 
 
-<view style='height: 55px'> </view>
-<xx-swiper
-></xx-swiper>
+<view style='height: 45px'> </view>
+<!-- <xx-swiper
+></xx-swiper> -->
 
     <!-- list="{{articleList}}" -->
 <xx-cover

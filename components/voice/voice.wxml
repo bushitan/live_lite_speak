@@ -3,13 +3,14 @@
     <view style='height:10px;'></view>
     <view class='voice' style='flex-direction:{{direction}}'>
         <block wx:for="{{list}}">
-            <image             
-                class='pk_image {{select==item.id?"bg_select":""}}' 
-                src='{{item.logo}}'
-                catchtap="click" 
-                data-index="{{index}}"
-                data-url="{{item.url}}"
-            ></image>
-        </block>       
+            <view class='node'>
+                <image             
+                    class='pk_image  {{select==item.id?"shadow":""}}' 
+                    src='{{item.user_logo}}'
+                    catchtap="click" 
+                    data-index="{{index}}"
+                ></image>
+            </view>
+        </block>      
     </view>
 </view>

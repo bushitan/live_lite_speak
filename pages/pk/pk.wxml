@@ -1,13 +1,17 @@
 
 <view class='banner page__bg_white'>
     <view class='line'></view>
-    <label>拼读比赛</label>
+    <label>每日拼读</label>
 </view>
 
 <block wx:for="{{pkList}}">
     <view class='node'>
         <view class='content'>
-            <xx-blackboard title="{{item.title}}" content="{{item.board}}"></xx-blackboard>
+            <xx-blackboard 
+                title="{{item.theme.title}}" 
+                content="{{item.theme.content}}"
+                url="{{item.theme.voice_url}}"
+            ></xx-blackboard>
             <view class='pk'>
                 <xx-voice 
                     title="学员"
@@ -26,7 +30,7 @@
             </view>
             <view style='height:15px;'></view>
             <view class='line__gray'></view>
-            <navigator url="/pages/speak/speak" class='join' catchtap='join'>我也参加</navigator>
+            <navigator url="/pages/speak/speak?theme_id={{item.theme.id}}" class='join' catchtap='join'>我也参加</navigator>
         </view>
     </view>
 </block>

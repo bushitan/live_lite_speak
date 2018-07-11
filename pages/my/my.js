@@ -1,9 +1,14 @@
+var API = require('../../utils/api.js');
+var GP
 Page({
+   
     data: {
-        height: 20,
-        focus: false,
-
-        marks:[
+        mapDict:{
+            phoneNumber:'15277126678',
+            latitude:26.5589,
+            longitude:106.70393, 
+        },
+        markers:[
             {
                 id: 0,
                 latitude: 26.5589,       		
@@ -11,23 +16,55 @@ Page({
                 width: 50,
                 height: 50,
             }
-        ]
+        ],
+
+        user: "",
+        usrName: "",
+        usrAddress: "",
     },
-    bindButtonTap: function () {
-        this.setData({
-            focus: true
+
+    onLoad(){
+        GP = this
+        var user = wx.getStorageSync(API.KEY_USER)
+        GP.setData({
+            user: user
         })
     },
-    bindTextAreaBlur: function (e) {
-        console.log(e.detail.value)
+    // 拨打电话
+    clickPhone() {
+        wx.makePhoneCall({
+            phoneNumber: GP.data.mapDict.phoneNumber //仅为示例，并非真实的电话号码
+        })
     },
-    bindFormSubmit: function (e) {
-        console.log(e.detail.value.textarea)
+
+    // 导航
+    clickAddress() {
+        wx.getLocation({
+            type: 'gcj02', //返回可以用于wx.openLocation的经纬度
+            success: function (res) { 
+                wx.openLocation({
+                    latitude: GP.data.mapDict.latitude,
+                    longitude: GP.data.mapDict.longitude,
+                    scale: 28
+                })
+            }
+        })
     },
-    formSubmit: function (e) {
-        console.log('form发生了submit事件，携带数据为：', e.detail.value)
+
+    inputName(e) {
+        console.log(e.detail)
+        GP.setData({ usrName: e.detail})
     },
-    formReset: function () {
-        console.log('form发生了reset事件')
-    }
+
+    inputPhone(e) {
+        console.log(e.detail)
+        GP.setData({ usrAddress: e.detail })
+    },
+    //报名试听
+    audition(){
+
+    },
+ 
+
+
 })

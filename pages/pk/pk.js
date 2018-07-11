@@ -83,17 +83,17 @@ Page({
      */
     onLoad: function (options) {
         GP = this
-        // GP.onInit()
+        GP.onInit()
     },
 
     onInit() {
 
         API.Request({
-            url: "https://xcx.308308.com/huaxun_2/api/article/get_list/meet/?tag_id=&start_index=0&end_index=10&app_id=wx51930c31391cc5cc",
+            url: API.SPEAK_GET_THEME_LIST,
             success: function (res) {
                 console.log(res.data)
                 GP.setData({
-                    articleList: [res.data.article_list[0]]
+                    pkList: res.data.theme_list
                 })
                 // GP.getCategoryList(1)
             },

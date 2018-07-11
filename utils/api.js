@@ -1,33 +1,25 @@
 
 
 
-var APP_ID = "wx51930c31391cc5cc"
+var APP_ID = "wxeb9623bdc85a64f4"
 // var host_url = 'https://xcx.308308.com/huaxun_2/api/';
-var API_308_URL = 'https://api.308308.com/';
-var XCX_308_URL = 'http://127.0.0.1:8000/huaxun_2/api308/';
+// var API_308_URL = 'https://api.308308.com/';
+var XCX_308_URL = 'http://127.0.0.1:8000/live/';
 var KEY_OPENID = "openid"
 var KEY_SESSION = "session"
 var KEY_TOKEN = "token"
 var KEY_INDUSTRYID = "industryid"
 var KEY_USER = "user"
+var KEY_USER_DICT = "user_dict"
 var request = new Request()
-request.init(XCX_308_URL + 'token/login/', APP_ID)
-
-console.log(request)
-function addToken(url) {
-    return url 
-}
-function addToken1(url) {
-    return url + "?access_token=" + wx.getStorageSync(KEY_TOKEN)
-}
+request.init(XCX_308_URL + 'lite/login/', APP_ID)
+ 
 module.exports = {
     Request: request.Request,
-    //获取行业大类
-    API_INFO_GET_ALL_INDUSTRY: addToken(API_308_URL + 'cms/articles/get_all_industry/'),
-    //获取行业大类下的子栏目
-    API_INFO_GET_CATEGORY_LIST: addToken(API_308_URL + 'cms/articles/get_categories_by_industry/'),
-    API_INFO_GET_ARTICLE: addToken(API_308_URL + 'cms/articles/get_article/'),
-    API_INFO_GET_ARTICLE_LIST: XCX_308_URL + 'cms/get/article_list/',
+
+    SPEAK_GET_THEME_LIST: XCX_308_URL + 'speak/get/theme_list/',
+    SPEAK_GET_THEME: XCX_308_URL + 'speak/get/theme/',
+
 
     KEY_SESSION: KEY_SESSION,
     KEY_INDUSTRYID: KEY_INDUSTRYID,
@@ -120,10 +112,10 @@ function Request() {
                     },
                     'success': function (res) {
                         var object = res.data
-                        wx.setStorageSync(KEY_OPENID, res.data.openid)
-                        wx.setStorageSync(KEY_SESSION, res.data.session)
-                        wx.setStorageSync(KEY_TOKEN, res.data.token)
-                        // wx.setStorageSync(KEY.USER_INFO, res.data.dict_user)
+                        // wx.setStorageSync(KEY_OPENID, res.data.openid)
+                        // wx.setStorageSync(KEY_SESSION, res.data.session)
+                        // wx.setStorageSync(KEY_TOKEN, res.data.token)
+                        wx.setStorageSync(KEY_USER_DICT, res.data.dict_user)
 
                         GlobalData.apiIsLogin = API_LOGIN_SUCCESS //登陆成功
                         // 执行login == false时的请求
@@ -148,14 +140,14 @@ function Request() {
         if (data == undefined)
             data = {}
         //session 不存在，设置为false
-        var _session = wx.getStorageSync(KEY_SESSION)
+        var _session = wx.getStorageSync(KEY_USER_DICT)["session"]
         if (!_session) //检查session,不存在，为false
             _session = "false"
-        // data['session'] = _session  //每个请求都加session
+        data['session'] = _session  //每个请求都加session
         data['app_id'] = APP_ID  //每个请求都加session
         wx.request
             ({
-                url: addToken1(options.url),
+                url: options.url,
                 method: options.method || "GET",
                 header: options.header || {'content-type': 'application/json'},
                 data: data,

@@ -1,5 +1,41 @@
 /* pages/my/my.wxss */
 
+/* 菜单  —— 图标、名字、箭头 */
+.xx_menu {
+    /* margin-top:1.17647059em; */
+    /* margin-top:15px; */
+    background-color:#FFFFFF;
+    line-height:1.41176471;
+    font-size:15px;
+    line-height: 20px;
+    /* padding: 0 15px; */
+}
+.xx_menu__node {
+    padding: 0 15px 10px;  
+    position:relative;
+    display:flex;
+    align-items:center;
+    color:inherit;
+}
+
+/* 已登录 */
+.login_btn{
+    position: relative;
+    width:49px; 
+    height: 49px;
+    border-radius: 5px;
+    border: 2px solid #56abd0;
+}
+.login_img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width:45px; 
+    height: 45px;
+}
+
+
+
 map{
     width: 100%;
     height: 150px;
