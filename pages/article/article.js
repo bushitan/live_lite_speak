@@ -12,21 +12,15 @@ Page({
 
     getArticle(article_id) {
         API.Request({
-            url: API.API_INFO_GET_ARTICLE,
-            method: "POST",
+            url: API.COVER_GET_ARTICLE,
+            // method: "POST",
             data: {
-                uid: 14,
                 article_id: article_id,
             },
             success: function (res) {
                 console.log(res.data)
-
-                if (res.data.status.code == 11107) {
-                    GP.noPower()
-                    return
-                }
                 GP.setData({
-                    article: res.data.data,
+                    article: res.data.dict_article,
                 })
             },
         })
@@ -45,7 +39,7 @@ Page({
     onLoad: function (options) {
         GP = this
         var article_id = options.article_id
-        // GP.getArticle(article_id)
+        GP.getArticle(article_id)
     },
 
     /**

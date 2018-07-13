@@ -30,7 +30,7 @@
             </view>
             <view style='height:15px;'></view>
             <view class='line__gray'></view>
-            <navigator url="/pages/speak/speak?theme_id={{item.theme.id}}" class='join' catchtap='join'>我也参加</navigator>
+            <navigator url="/pages/speak/speak?theme_id={{item.theme.id}}" class='join' catchtap='join'>参加</navigator>
         </view>
     </view>
 </block>

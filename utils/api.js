@@ -4,7 +4,9 @@
 var APP_ID = "wxeb9623bdc85a64f4"
 // var host_url = 'https://xcx.308308.com/huaxun_2/api/';
 // var API_308_URL = 'https://api.308308.com/';
-var XCX_308_URL = 'http://127.0.0.1:8000/live/';
+// var XCX_308_URL = 'http://127.0.0.1:8000/live/';
+// var XCX_308_URL = 'http://192.168.199.203:8000/live/';
+var XCX_308_URL = 'https://www.12xiong.top/live/';
 var KEY_OPENID = "openid"
 var KEY_SESSION = "session"
 var KEY_TOKEN = "token"
@@ -16,14 +18,23 @@ request.init(XCX_308_URL + 'lite/login/', APP_ID)
  
 module.exports = {
     Request: request.Request,
+    LITE_REGISTER: XCX_308_URL + 'lite/register/',
+
+    COVER_GET_TAG_LIST: XCX_308_URL + 'cover/tag/get_list/',
+    COVER_GET_COVER_LIST: XCX_308_URL + 'cover/news/get_list/',
+    COVER_GET_ARTICLE: XCX_308_URL + 'cover/article/get/',
 
     SPEAK_GET_THEME_LIST: XCX_308_URL + 'speak/get/theme_list/',
     SPEAK_GET_THEME: XCX_308_URL + 'speak/get/theme/',
+    SPEAK_GET_TOKEN: XCX_308_URL + 'speak/get/token/',
+    SPEAK_ADD_VOICE: XCX_308_URL + 'speak/add/voice/',
+    SPEAK_DELETE_VOICE: XCX_308_URL + 'speak/delete/voice/',
 
 
     KEY_SESSION: KEY_SESSION,
     KEY_INDUSTRYID: KEY_INDUSTRYID,
     KEY_USER: KEY_USER,
+    KEY_USER_DICT: KEY_USER_DICT,
 }
 
 

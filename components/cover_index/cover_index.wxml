@@ -3,7 +3,7 @@
 <view class='cover'>
     <block wx:for="{{list}}" wx:key="item">
        <navigator  url='/pages/article/article?article_id={{item.article_id}}'    class='node'> 
-            <image class='image' src='{{item.cover}}' mode='widthFit'></image>
+            <image class='image' src='{{item.cover_url}}' mode='widthFit'></image>
             <view class='title'>{{item.title}}</view>
             <view class='time'>{{item.issue_time}}</view>
         </navigator>

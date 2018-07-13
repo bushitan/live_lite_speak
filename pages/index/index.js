@@ -21,17 +21,33 @@ Page({
     onInit() {
 
         API.Request({
-            url: "https://xcx.308308.com/huaxun_2/api/article/get_list/meet/?tag_id=&start_index=0&end_index=10&app_id=wx51930c31391cc5cc",
+            url: API.COVER_GET_TAG_LIST,
             success: function (res) {
                 console.log(res.data)
                 GP.setData({
-                    articleList: [res.data.article_list[0]]
+                    tagList:res.data.list_tag
+                    // articleList: [res.data.article_list[0]]
                 })
-                // GP.getCategoryList(1)
+                GP.getCoverList(res.data.list_tag[0].tag_id)
             },
         })
-
     },
+
+    // 获取封面列表
+    getCoverList(tag_id){
+        API.Request({
+            url: API.COVER_GET_COVER_LIST,
+            data: { tag_id: tag_id},
+            success: function (res) {
+                console.log(res.data)
+                GP.setData({
+                    coverList: res.data.list_cover
+                    // articleList: [res.data.article_list[0]]
+                })
+            },
+        })
+    },
+
     /**
      * 用户点击右上角分享
      */

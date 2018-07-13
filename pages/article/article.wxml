@@ -1,3 +1,4 @@
 <!--pages/article/article.wxml-->
 <article-video
+    article="{{article}}"
 ></article-video>   

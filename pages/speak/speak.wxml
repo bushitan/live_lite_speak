@@ -39,14 +39,14 @@
 </view>
 
 <block wx:else>
-    <view wx:if="{{isComplete}}">
+    <view wx:if="{{!isComplete}}">
         <xx-record 
             catch:getTempFile="getRecordFile"
         ></xx-record> 
     </view>
     <view wx:else class='footer'>
         您已提交作业，如要重新提交，请点击删除 
-        <button size='mini' catchtap='delete' >删除</button>
+        <button size='mini' catchtap='deleteVoice' >删除</button>
     </view> 
 </block>
 

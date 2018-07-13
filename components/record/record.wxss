@@ -65,8 +65,8 @@
 }
 .sub image{
     margin: auto;
-    width: 21px;
-    height: 21px;
+    width: 30px;
+    height: 30px;
 }
 
 

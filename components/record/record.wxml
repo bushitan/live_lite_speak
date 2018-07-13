@@ -4,7 +4,7 @@
     <view class='circle '>
         <view class='circle sub' catchtap='getTempFile' hidden='{{!tempFilePath}}'>
             <view class='node' hover-class="click">
-            上传
+                <image src='../../images/menu_upload.png'></image>
             </view>           
         </view>
 
@@ -21,7 +21,7 @@
 
         <view class='circle sub' catchtap='audition' hidden='{{!tempFilePath}}'> 
             <view class='node' hover-class="click">
-                试听
+                <image src='../../images/menu_play.png'></image>
             </view>    
         </view>
     </view>

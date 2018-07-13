@@ -5,7 +5,7 @@
 <view class='sample'>
     <!-- <view>老师示范</view>
     <view style='height:5px'></view> -->
-    <image src='../../images/phone.png' catchtap='click' data-url="{{url}}"></image>
+    <image src='../../images/menu_teacher.png' catchtap='click' data-url="{{url}}"></image>
 <!-- <button size='mini'>老师示范</button> -->
 </view>
 <!-- <view style='height:10px'></view> -->

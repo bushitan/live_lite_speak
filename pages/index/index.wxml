@@ -3,6 +3,7 @@
     <!-- <view class='line'></view>
     <label>试听</label> -->
     <xx-tab
+        list="{{tagList}}"
         mode="scroll"    
         colorunselect="#888" 
         colorselect="#1c82d4"  
@@ -16,8 +17,9 @@
 <!-- <xx-swiper
 ></xx-swiper> -->
 
-    <!-- list="{{articleList}}" -->
+    <!-- list="{{coverList}}" -->
 <xx-cover
+    list="{{coverList}}"
 >
 </xx-cover>
 <xx-loading more="{{false}}"></xx-loading>
