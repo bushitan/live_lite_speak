@@ -48,3 +48,13 @@ map{
 .btn{
     padding: 0 15px;
 }
+
+.navigte{
+    background-color: #fff;
+    padding: 0 15px;
+}
+.icon{
+    width: 23px;
+    height: 23px;
+    margin-right: 5px;
+}

@@ -7,11 +7,61 @@
                 <image class='login_img' src="{{user.avatarUrl}}" wx:else></image>
             </button>
         </view>
+        
     </view>
 </view>
 
+<view class='navigte '>
+    <xx-navigte   catchclick="">
+        <image slot="icon" class='icon' src="../../images/my_meet.png"></image> 
+        <view slot="left" >试听课报名</view> 
+        <view slot="right">免费报名</view>
+    </xx-navigte>
+    <view class='line__gray'></view>
+    <xx-navigte   catchclick="">
+        <image slot="icon" class='icon' src="../../images/my_meet.png"></image> 
+        <view slot="left" >我的积分</view> 
+        <view slot="right"></view>
+    </xx-navigte>
+    <view class='line__gray'></view>
+    <!-- <xx-navigte   catchclick="">
+        <image slot="icon" class='icon' src="../../images/my_meet.png"></image> 
+        <view slot="left" >礼品</view> 
+        <view slot="right"></view>
+    </xx-navigte> -->
+</view>
 
-<xx-banner name="课堂位置"></xx-banner>
+<view style='height:10px;'></view>
+<!-- <xx-banner name="积分换礼品"></xx-banner> -->
+
+<view class='navigte '>
+<xx-navigte   catchclick="">
+    <image slot="icon" class='icon' src="../../images/my_meet.png"></image> 
+    <view slot="left" >积分换礼品</view> 
+    <view slot="right">我的积分</view>
+</xx-navigte>
+</view>
+<!-- <button open-type="share" type='primary'>分享拿积分</button> -->
+<view style='height:15px;'></view> 
+
+<!-- <xx-banner name="报名"></xx-banner>
+<view class='input'>
+    <xx-input name="姓名" catch:input="inputName"></xx-input>
+    <view class='line__gray'></view>
+    <xx-input name="电话" catch:input="inputPhone"></xx-input>
+</view>
+<view style='height:15px;'></view>
+<view class='btn'>
+    <button type='primary' catchtap='audition'>试听课报名</button>
+</view>
+<view style='height:30px;'></view>
+
+-->
+
+
+
+
+<!-- <xx-banner name="课堂位置"></xx-banner>
 <map latitude="{{mapDict.latitude}}" longitude="{{mapDict.longitude}}"markers='{{markers}}' scale="18" ></map>
 
 <view class='input'>
@@ -24,18 +74,7 @@
         <view slot="left" >15211786648</view> 
         <view slot="right">拨号</view>
     </xx-navigte>
-</view>
+</view> -->
 
 
 <view style='height:15px;'></view>
-<xx-banner name="报名"></xx-banner>
-<view class='input'>
-    <xx-input name="姓名" catch:input="inputName"></xx-input>
-    <view class='line__gray'></view>
-    <xx-input name="电话" catch:input="inputPhone"></xx-input>
-</view>
-<view style='height:15px;'></view>
-<view class='btn'>
-    <button type='primary' catchtap='audition'>试听课报名</button>
-</view>
-<view style='height:30px;'></view>

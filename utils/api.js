@@ -4,9 +4,9 @@
 var APP_ID = "wxeb9623bdc85a64f4"
 // var host_url = 'https://xcx.308308.com/huaxun_2/api/';
 // var API_308_URL = 'https://api.308308.com/';
-// var XCX_308_URL = 'http://127.0.0.1:8000/live/';
+var XCX_308_URL = 'http://127.0.0.1:8000/live/';
 // var XCX_308_URL = 'http://192.168.199.203:8000/live/';
-var XCX_308_URL = 'https://www.12xiong.top/live/';
+// var XCX_308_URL = 'https://www.12xiong.top/live/';
 var KEY_OPENID = "openid"
 var KEY_SESSION = "session"
 var KEY_TOKEN = "token"
@@ -30,6 +30,7 @@ module.exports = {
     SPEAK_ADD_VOICE: XCX_308_URL + 'speak/add/voice/',
     SPEAK_DELETE_VOICE: XCX_308_URL + 'speak/delete/voice/',
 
+    BONUS_SHARE: XCX_308_URL + 'speak/bonus/share/',
 
     KEY_SESSION: KEY_SESSION,
     KEY_INDUSTRYID: KEY_INDUSTRYID,

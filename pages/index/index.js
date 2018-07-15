@@ -14,8 +14,27 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
+        // console.log(options)
         GP = this
         GP.onInit()
+
+        if (options.hasOwnProperty('share'))
+            GP.getShare(options)
+    },
+    getShare(options){
+        var user_id = options.user_id
+        API.Request({
+            url: API.BONUS_SHARE,
+            data: { share_id: user_id },
+            success: function (res) {
+                console.log(res.data)
+                if (res.data.result == true){
+                    wx.showModal({
+                        title: res.data.msg,
+                    })
+                }
+            },
+        })
     },
 
     onInit() {

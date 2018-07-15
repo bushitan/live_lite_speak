@@ -65,6 +65,13 @@ Page({
 
     },
  
-
+    onShareAppMessage(){
+        return {
+            title: '自定义转发标题',
+            path: 'pages/index/index/?share=true&user_id=' + wx.getStorageSync(API.KEY_USER_DICT).user_id
+            
+            // {"nick_name":"this.丰兄", "session":"iRPP5reRQanRZN5sbbNFAg==", "user_id":10, "is_teacher":1, "avatar_url":"https://wx.qlogo.cn/mmopen/vi_32/FmjAcibbIH7CAWD8KJPKSQVen6RwQbux7eqTkJ4t2JicwaiciazNXNZW0d4GxiahrWc2mlpk4QAV1Gdz7v2v2VhHib3g/132" }
+        }
+    },
 
 })
