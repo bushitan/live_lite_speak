@@ -121,6 +121,26 @@ Page({
 
         GP.setData({ themeID: options.theme_id})
         GP.onInit()
+        GP.getCheck(options)
+    },
+    getCheck(){
+        API.Request({
+            url: API.BONUS_CEHCK,
+            data: { 
+                theme_id: GP.data.themeID
+            },
+            success: function (res) {
+                console.log(res.data)
+                wx.showModal({
+                    title: '打卡成功，获得2积分',
+                })
+                // if (res.data.result == true) {
+                //     wx.showModal({
+                //         title: res.data.msg,
+                //     })
+                // }
+            },
+        })
     },
 
     onInit() {

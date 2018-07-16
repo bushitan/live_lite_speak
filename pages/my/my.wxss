@@ -58,3 +58,7 @@ map{
     height: 23px;
     margin-right: 5px;
 }
+.score{
+    font-size: 9pt;
+    color: #888;
+}

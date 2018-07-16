@@ -21,6 +21,13 @@ Page({
         user: "",
         usrName: "",
         usrAddress: "",
+
+        score:81,
+    },
+    toExchange(){
+        wx.navigateTo({
+            url: '/pages/exchange/exchange',
+        })
     },
 
     onLoad(){
@@ -29,7 +36,36 @@ Page({
         GP.setData({
             user: user
         })
+        // GP.getScore()
     },
+    onSHow() {
+        // GP.getScore()
+    },
+
+    getScore() {
+        API.Request({
+            url: API.BONUS_GET_SCORE,
+            data: {
+            },
+            success: function (res) {
+                console.log(res.data)
+                GP.setData({
+                    score: res.data.score_dict
+                })
+                // wx.showModal({
+                //     title: '打卡成功，获得2积分',
+                // })
+                // if (res.data.result == true) {
+                //     wx.showModal({
+                //         title: res.data.msg,
+                //     })
+                // }
+            },
+        })
+    },
+
+
+
     // 拨打电话
     clickPhone() {
         wx.makePhoneCall({

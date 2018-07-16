@@ -1,0 +1,37 @@
+<!--pages/exchange/exchange.wxml-->
+
+ <xx-banner name="兑换礼物"></xx-banner>
+
+ <view class='good'>
+    <block wx:for="{{list}}" wx:key="index">
+        <view class='node'>
+            <label>{{item.name}}</label>
+            <view class='exchange'>
+                <label>{{item.price}}</label>
+                <button size='mini' data-qr="{{item.qr}}" catchtap='exchange'>兑换</button>
+            </view>
+        </view>
+    </block>
+ </view>
+
+ <view style='height:25px'>
+    
+ </view>
+ <view class='btn'>
+     <button catchtap='openQR'>扫码扣积分(教育机构才看得到)</button>
+ </view>
+
+ <xx-banner name="兑换地址"></xx-banner>
+ <map latitude="{{mapDict.latitude}}" longitude="{{mapDict.longitude}}"markers='{{markers}}' scale="18" ></map>
+
+<view class='input'>
+    <xx-navigte   catchclick="clickAddress">
+        <view slot="left" >云景路8号</view> 
+        <view slot="right">导航</view>
+    </xx-navigte>
+    <view class='line__gray'></view>
+    <xx-navigte   catchclick="clickPhone" >
+        <view slot="left" >15211786648</view> 
+        <view slot="right">拨号</view>
+    </xx-navigte>
+</view>

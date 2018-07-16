@@ -1,6 +1,7 @@
 {
     "pages":[
         "pages/index/index",
+        "pages/exchange/exchange",
         "pages/article/article",
         "pages/pk/pk",
         "pages/speak/speak",

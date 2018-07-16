@@ -8,60 +8,60 @@ Page({
      */
     data: {
         pkList: [
-            {
-                title: "7月5日",
-                board: "qwewr32r32rqwewr32r32rqwr32rqwewr",
-                student_list: [
-                    {
-                        id: "1",
-                        logo: "../../images/my_select.png",
-                        url: 'http://img.12xiong.top/help_click.mp3',
-                    },
-                ],
-                visitor_list: [
-                    {
-                        id: "2",
-                        logo: "../../images/my_select.png",
-                        url: "../../images/voice.mp3",
-                    },
-                ],
-            },
-            {
-                title: "7月5日",
-                board: "qwewr32r32rqwewr32r32rqwr32rqwewr",
-                student_list: [
-                    {
-                        id: "1",
-                        logo: "../../images/my_select.png",
-                        url: "../../images/voice.mp3",
-                    },
-                ],
-                visitor_list: [
-                    {
-                        id: "2",
-                        logo: "../../images/my_select.png",
-                        url: "../../images/voice.mp3",
-                    },
-                ],
-            },
-            {
-                title: "7月5日",
-                board: "qwewr32r32rqwewr32r32rqwr32rqwewr",
-                student_list: [
-                    {
-                        id: "1",
-                        logo: "../../images/my_select.png",
-                        url: "../../images/voice.mp3",
-                    },
-                ],
-                visitor_list: [
-                    {
-                        id: "2",
-                        logo: "../../images/my_select.png",
-                        url: "../../images/voice.mp3",
-                    },
-                ],
-            },
+            // {
+            //     title: "7月5日",
+            //     board: "qwewr32r32rqwewr32r32rqwr32rqwewr",
+            //     student_list: [
+            //         {
+            //             id: "1",
+            //             logo: "../../images/my_select.png",
+            //             url: 'http://img.12xiong.top/help_click.mp3',
+            //         },
+            //     ],
+            //     visitor_list: [
+            //         {
+            //             id: "2",
+            //             logo: "../../images/my_select.png",
+            //             url: "../../images/voice.mp3",
+            //         },
+            //     ],
+            // },
+            // {
+            //     title: "7月5日",
+            //     board: "qwewr32r32rqwewr32r32rqwr32rqwewr",
+            //     student_list: [
+            //         {
+            //             id: "1",
+            //             logo: "../../images/my_select.png",
+            //             url: "../../images/voice.mp3",
+            //         },
+            //     ],
+            //     visitor_list: [
+            //         {
+            //             id: "2",
+            //             logo: "../../images/my_select.png",
+            //             url: "../../images/voice.mp3",
+            //         },
+            //     ],
+            // },
+            // {
+            //     title: "7月5日",
+            //     board: "qwewr32r32rqwewr32r32rqwr32rqwewr",
+            //     student_list: [
+            //         {
+            //             id: "1",
+            //             logo: "../../images/my_select.png",
+            //             url: "../../images/voice.mp3",
+            //         },
+            //     ],
+            //     visitor_list: [
+            //         {
+            //             id: "2",
+            //             logo: "../../images/my_select.png",
+            //             url: "../../images/voice.mp3",
+            //         },
+            //     ],
+            // },
         ],
         
 
