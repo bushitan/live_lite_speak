@@ -21,7 +21,7 @@
      <button catchtap='openQR'>扫码扣积分(教育机构才看得到)</button>
  </view>
 
- <xx-banner name="兑换地址"></xx-banner>
+ <!-- <xx-banner name="兑换地址"></xx-banner>
  <map latitude="{{mapDict.latitude}}" longitude="{{mapDict.longitude}}"markers='{{markers}}' scale="18" ></map>
 
 <view class='input'>
@@ -34,4 +34,4 @@
         <view slot="left" >15211786648</view> 
         <view slot="right">拨号</view>
     </xx-navigte>
-</view>
+</view> -->

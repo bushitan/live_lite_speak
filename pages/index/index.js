@@ -28,7 +28,8 @@ Page({
             data: { share_id: user_id },
             success: function (res) {
                 console.log(res.data)
-                if (res.data.result == true){
+                //已经分享后就没有提示了
+                if (res.data.code != API.BONUS_CODE_SHARE_EXIST){
                     wx.showModal({
                         title: res.data.msg,
                     })

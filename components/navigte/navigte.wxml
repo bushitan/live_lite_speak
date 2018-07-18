@@ -1,5 +1,5 @@
 
-<view catchtap="click" class="xx_node " hover-class="xx_active" >
+<navigator url="{{url}}" method="{{method}}" class="xx_node "   >
     <slot name="icon"  ></slot>
     <view class="title">
         <slot name="left"></slot>
@@ -8,4 +8,4 @@
         <slot name="right"></slot>
     </view> 
      <view class="arrow" hidden='{{isarrow == "false"}}'></view> 
-</view>
+</navigator>

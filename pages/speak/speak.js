@@ -131,9 +131,10 @@ Page({
             },
             success: function (res) {
                 console.log(res.data)
-                wx.showModal({
-                    title: '打卡成功，获得2积分',
-                })
+                if (res.data.code == API.BONUS_CODE_CHECK)
+                    wx.showModal({
+                        title: res.data.msg,
+                    })
                 // if (res.data.result == true) {
                 //     wx.showModal({
                 //         title: res.data.msg,

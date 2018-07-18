@@ -1,0 +1,29 @@
+/* pages/roster/roster.wxss */
+
+.roster{
+    display: flex;
+    flex-wrap:wrap;
+    
+}
+.node{
+    /* flex: 25%; */
+    flex-basis: 25%;
+    display: flex;
+     justify-content: center; 
+    /* align-items: center; */
+    margin:5px 0;
+
+}
+.logo{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+.name {
+    text-align: center;
+}
+
+.btn{
+    width: 32px;
+    height: 32px;
+}

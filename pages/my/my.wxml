@@ -35,16 +35,35 @@
 <!-- <xx-banner name="积分换礼品"></xx-banner> -->
 
 <view class='navigte '>
-    <xx-navigte   catchclick="toExchange">
+    <xx-navigte url="/pages/exchange/exchange"   >
         <image slot="icon" class='icon' src="../../images/my_meet.png"></image> 
         <view slot="left" >积分换礼品</view> 
         <view slot="right" class='score'>当前积分:{{score}}</view>
     </xx-navigte>
+    <view class='line__gray'></view>
+    <xx-navigte url="/pages/address/address"  >
+        <image slot="icon" class='icon' src="../../images/my_meet.png"></image> 
+        <view slot="left" >礼品领取地址</view> 
+        <view slot="right" class='score'>定位</view>
+    </xx-navigte>
 </view>
-<!-- <button open-type="share" type='primary'>分享拿积分</button> -->
+<view style='height:10px;'></view>
+<view class='navigte '>
+    <xx-navigte url="/pages/sign_in/sign_in"   >
+        <image slot="icon" class='icon' src="../../images/my_meet.png"></image> 
+        <view slot="left" >报名领积分</view> 
+        <view slot="right" class='score'></view>
+    </xx-navigte>
+    <!-- <view class='line__gray'></view>
+    <xx-navigte url="/pages/address/address"  >
+        <image slot="icon" class='icon' src="../../images/my_meet.png"></image> 
+        <view slot="left" >礼品领取地址</view> 
+        <view slot="right" class='score'>定位</view>
+    </xx-navigte> -->
+</view>
 <view style='height:15px;'></view> 
 
- <xx-banner name="试听课报名"></xx-banner>
+ <!-- <xx-banner name="试听课报名"></xx-banner>
 <view class='input'>
     <xx-input name="姓名" catch:input="inputName"></xx-input>
     <view class='line__gray'></view>
@@ -54,7 +73,7 @@
 <view class='btn'>
     <button type='primary' catchtap='audition'>试听课报名</button>
 </view>
-<view style='height:30px;'></view>
+<view style='height:30px;'></view> -->
 
 
 

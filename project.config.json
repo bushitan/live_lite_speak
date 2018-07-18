@@ -56,13 +56,25 @@
 					"id": 3,
 					"name": "index",
 					"pathName": "pages/index/index",
-					"query": "share=true&user_id=10"
+					"query": "share=true&user_id=11"
 				},
 				{
 					"id": -1,
 					"name": "exchange",
 					"pathName": "pages/exchange/exchange",
 					"query": "theme_id=1"
+				},
+				{
+					"id": -1,
+					"name": "article",
+					"pathName": "pages/article/article",
+					"query": "theme_id=1"
+				},
+				{
+					"id": -1,
+					"name": "sign_in",
+					"pathName": "pages/sign_in/sign_in",
+					"query": ""
 				}
 			]
 		}

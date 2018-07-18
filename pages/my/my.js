@@ -24,9 +24,14 @@ Page({
 
         score:81,
     },
-    toExchange(){
+    toExchange() {
         wx.navigateTo({
             url: '/pages/exchange/exchange',
+        })
+    },
+    toAddress() {
+        wx.navigateTo({
+            url: '/pages/address/address',
         })
     },
 
@@ -87,19 +92,6 @@ Page({
         })
     },
 
-    inputName(e) {
-        console.log(e.detail)
-        GP.setData({ usrName: e.detail})
-    },
-
-    inputPhone(e) {
-        console.log(e.detail)
-        GP.setData({ usrAddress: e.detail })
-    },
-    //报名试听
-    audition(){
-
-    },
  
     onShareAppMessage(){
         return {

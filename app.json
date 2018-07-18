@@ -1,6 +1,9 @@
 {
     "pages":[
+        "pages/roster/roster",
         "pages/index/index",
+        "pages/sign_in/sign_in",
+        "pages/address/address",
         "pages/exchange/exchange",
         "pages/article/article",
         "pages/pk/pk",
@@ -36,7 +39,7 @@
             },
             {
                 "pagePath": "pages/my/my",
-                "text": "报名",
+                "text": "奖品",
                 "iconPath": "images/my_unselect.png",
                 "selectedIconPath": "images/my_select.png"
             }

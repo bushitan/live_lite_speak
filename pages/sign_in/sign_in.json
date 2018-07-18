@@ -1,0 +1,12 @@
+{
+    "usingComponents": {
+        "xx-banner": "../../components/banner/banner",
+        "xx-menu": "../../components/menu/menu",
+        "xx-loading": "../../components/loading/loading",
+        "xx-voice": "../../components/voice/voice",
+        "xx-blackboard": "../../components/blackboard/blackboard",
+        "xx-cover": "../../components/cover_pk/cover_pk",
+        "xx-navigte": "../../components/navigte/navigte",
+        "xx-input": "../../components/input/input"
+    }
+}

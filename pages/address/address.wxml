@@ -1,0 +1,15 @@
+<!--pages/exchange/exchange.wxml-->
+<xx-banner name="机构地址"></xx-banner>
+ <map latitude="{{mapDict.latitude}}" longitude="{{mapDict.longitude}}"markers='{{markers}}' scale="18" ></map>
+
+<view class='input'>
+    <xx-navigte   catchclick="clickAddress">
+        <view slot="left" >云景路8号</view> 
+        <view slot="right">导航</view>
+    </xx-navigte>
+    <view class='line__gray'></view>
+    <xx-navigte   catchclick="clickPhone" >
+        <view slot="left" >15211786648</view> 
+        <view slot="right">拨号</view>
+    </xx-navigte>
+</view>

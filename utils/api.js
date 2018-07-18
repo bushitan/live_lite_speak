@@ -4,9 +4,9 @@
 var APP_ID = "wxeb9623bdc85a64f4"
 // var host_url = 'https://xcx.308308.com/huaxun_2/api/';
 // var API_308_URL = 'https://api.308308.com/';
-// var XCX_308_URL = 'http://127.0.0.1:8000/live/';
+var XCX_308_URL = 'http://127.0.0.1:8000/live/';
 // var XCX_308_URL = 'http://192.168.199.203:8000/live/';
-var XCX_308_URL = 'https://www.12xiong.top/live/';
+// var XCX_308_URL = 'https://www.12xiong.top/live/';
 var KEY_OPENID = "openid"
 var KEY_SESSION = "session"
 var KEY_TOKEN = "token"
@@ -32,12 +32,24 @@ module.exports = {
 
     BONUS_CEHCK: XCX_308_URL + 'speak/bonus/check/',
     BONUS_SHARE: XCX_308_URL + 'speak/bonus/share/',
+    BONUS_SIGN_IN: XCX_308_URL + 'speak/bonus/sign_in/',
     BONUS_GET_SCORE: XCX_308_URL + 'speak/bonus/get/score/',
 
     KEY_SESSION: KEY_SESSION,
     KEY_INDUSTRYID: KEY_INDUSTRYID,
     KEY_USER: KEY_USER,
     KEY_USER_DICT: KEY_USER_DICT,
+
+
+    BONUS_CODE_CHECK : 1101  ,       
+    BONUS_CODE_CHECK_EXIST : 1102   ,
+    BONUS_CODE_SHARE : 1103         ,
+    BONUS_CODE_SHARE_SELF : 1104    ,
+    BONUS_CODE_SHARE_EXIST : 1105  ,
+    BONUS_CODE_SIGN_IN : 1106      ,
+    BONUS_CODE_SIGN_IN_EXIST : 1107  ,
+    BONUS_CODE_COST : 1108    ,
+    BONUS_CODE_COST_NOT_ENOUGH : 1109    , 
 }
 
 

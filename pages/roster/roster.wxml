@@ -1,0 +1,16 @@
+<!--pages/roster/roster.wxml-->
+
+<view class='roster'>
+    <block wx:for="{{list}}" wx:key="index">
+        <view class='node'>
+            <view>
+                <image class='logo' src='{{item.image}}'></image>
+                <view class='name'>213</view>
+                <view>
+                    <image class='btn' src='../../images/info_select1.png'  catchtap='add'></image>
+                    <image class='btn' src='../../images/my_unselect.png'  catchtap='reduce'></image>
+                </view>
+            </view>
+        </view>
+    </block>
+</view>

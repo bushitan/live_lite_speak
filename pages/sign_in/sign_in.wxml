@@ -1,0 +1,12 @@
+<!--pages/exchange/exchange.wxml-->
+<xx-banner name="试听课报名"></xx-banner>
+<view class='input'>
+    <xx-input name="姓名" catch:input="inputName" value="{{usrName}}"></xx-input>
+    <view class='line__gray'></view>
+    <xx-input name="电话" catch:input="inputPhone" value="{{usrAddress}}"></xx-input>
+</view>
+<view style='height:15px;'></view>
+<view class='btn'>
+    <button type='primary' catchtap='audition'>试听课报名</button>
+</view>
+<view style='height:30px;'></view>
